@@ -1,1 +1,19 @@
+In this exercise, we will experiment with looping over objects and internal arrays.
+
+const obj = {
+    Name1: "a",
+    Name2: "b",
+    Name3: "c"
+};
+for (let prop in obj) {
+    console.log(prop, obj[prop]);
+}
+const arr = ["Name1", "Name2", "Name3"];
+for (let a = 0; a < arr.length; a++) {
+    console.log(a, arr[a]);
+}
+ 
+for (el in arr) {
+    console.log(el, arr[el]);
+} 
 
