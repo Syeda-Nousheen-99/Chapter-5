@@ -1,1 +1,13 @@
+In this exercise we will use a for loop to create an array that holds objects. Starting 
+with creating a blank array, the block of code within the loop will create an object 
+that gets inserted into the array.
 
+const myWork = [];
+for (let x = 1; x < 10; x++) {
+    let stat = x % 2 ? true : false;
+    let temp = {
+        name: `Lesson ${x}`, status: stat
+    };
+    myWork.push(temp);
+}
+console.log(myWork);
