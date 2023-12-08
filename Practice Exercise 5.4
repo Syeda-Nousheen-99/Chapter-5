@@ -1,1 +1,20 @@
+In this exercise we will be generating a table of values. We will be using loops to 
+generate rows and also columns, which will be nested within the rows. Nested arrays 
+can be used to represent rows in a table. This is a common structure in spreadsheets, 
+where each row is a nested array within a table and the contents of these rows are 
+the cells in the table. The columns will align as we are creating an equal number of 
+cells in each row.
 
+const myTable = [];
+const rows = 4;
+const cols = 7;
+let counter = 0;
+for (let y = 0; y < rows; y++) {
+    let tempTable = [];
+    for (let x = 0; x < cols; x++) {
+        counter++;
+        tempTable.push(counter);
+    }
+    myTable.push(tempTable);
+}
+console.table(myTable);
