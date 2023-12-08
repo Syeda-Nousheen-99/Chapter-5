@@ -1,1 +1,17 @@
-P
+const max = 5;
+const randomNumber = Math.floor(Math.random() * max) + 1;
+//console.log(ranNumber);
+let correct = false;
+while (!correct) {
+    // let guess = prompt("Guess a Number 1 - " + max);
+    guess = Number(guess);
+    if (guess === randomNumber) {
+        correct = true;
+        alert("CongratulationYou got it " + randomNumber);
+    } else if (guess > randomNumber) {
+        alert("Too high");
+    } else {
+       alert("Too Low");
+    }
+} 
+
