@@ -1,1 +1,16 @@
+This exercise will construct an array as it loops through the incrementing values of 
+x. Once the array is done, this exercise also will demonstrate several ways to output 
+array contents. 
+
+const myArray = [];
+for (let x = 0; x < 10; x++) {
+    myArray.push(x + 1);
+}
+console.log(myArray);
+for (let i = 0; i < myArray.length; i++) {
+    console.log(myArray[i]);
+}
+for (let val of myArray) {
+    console.log(val);
+}
 
