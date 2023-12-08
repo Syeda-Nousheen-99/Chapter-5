@@ -1,1 +1,24 @@
+This exercise will demonstrate how to create a string with all the digits as it loops through them. We can also set a value to skip by adding a condition that will use continue, skipping the matching condition. A second option is to do the same  exercise and use the break keyword.
 
+let outputs = ""; 
+let skipThiss = 7; 
+for (let i = 0; i < 10; i++) { 
+  if (i === skipThiss) { 
+    continue; 
+  } 
+  outputs += i; 
+} 
+console.log(outputs);
+
+//  Alternatively, the following code could be used, replacing continue with break:  //
+
+let output = "";
+let skipThis = 7;
+for (let i = 0; i < 10; i++) {
+  if (i === skipThis) {
+    break;
+  }
+  output += i;
+}
+ 
+console.log(output); 
