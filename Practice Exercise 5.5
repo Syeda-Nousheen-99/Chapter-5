@@ -1,1 +1,22 @@
+Explore how to create a table grid that contains nested arrays as rows within a table. 
+The rows will each contain the number of cells needed for the number of columns set 
+in the variables. This grid table will dynamically adjust depending on the values for 
+the variables.
 
+const grid = [];
+const cells = 64;
+let counters = 0;
+let row;
+for (let x = 0; x < cells + 1; x++) {
+    if (counters % 8 == 0) {
+        if (row != undefined) {        
+            grid.push(row);
+        }
+        row = [];
+    }
+    counters++;
+    let temp = counters;
+    row.push(temp);
+ 
+}
+console.table(grid);
